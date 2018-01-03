@@ -6,8 +6,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public/'),
     filename: 'bundle.js',
-    libraryTarget: 'var', // 웹팩으로 만든 함수는 즉시 호출 함수에서 변수로 담아서 외부 html 파일에서 bundle js 내용의 함수를 호출할수 있ㄱ해준다.
-    library: 'alpha' // 호출 시 변수명이다.
   },
 
   devServer: {

@@ -1,15 +1,18 @@
-import React from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import React, { Component } from 'react';
+import {
+  HashRouter as Router,
+  Route,
+} from 'react-router-dom';
 import {observer} from 'mobx-react';
 import Routers from './Routers';
 
 @observer
-class App extends React.Component {
+class App extends Component {
   render(){
       return (
-        <BrowserRouter>
-            <Routers />
-        </BrowserRouter>
+        <Router>
+          <Routers />
+        </Router>
       )
   }
 }

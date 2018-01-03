@@ -105,7 +105,7 @@ export default class MainHeader extends Component {
 
     render() {
       const {UserInfo} = store;
-      console.log("???",UserInfo);
+      // console.log("???",UserInfo);
       return (
           <Style.Header>
               <HeaderTtitleComponent />
