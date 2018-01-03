@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['babel-polyfill', './src/index.js'],
 
   output: {
     path: path.resolve(__dirname, 'public/'),
@@ -26,7 +26,7 @@ module.exports = {
         exclude: /node_modules/,
         query: {
           cacheDirectory: true,
-          presets: ['es2015', 'react'],
+          presets: ['es2015', 'react',],
         },
       },
       {
