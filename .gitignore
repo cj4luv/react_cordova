@@ -22,7 +22,3 @@ yarn-error.log*
 
 .package-lock.json
 package-lock.json
-
-/cordova/platforms
-/cordova/node_modules
-/cordova/plugins
